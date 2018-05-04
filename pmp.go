@@ -4,7 +4,7 @@ import "encoding/json"
 
 // Private Marketplace Object
 type Pmp struct {
-	Private int       `json:"private_auction,omitempty"`
+	Private int       `json:"private_auction"`
 	Deals   []Deal    `json:"deals,omitempty"`
 	Ext     Extension `json:"ext,omitempty"`
 }
