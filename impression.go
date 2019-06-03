@@ -17,6 +17,7 @@ var (
 // subordinate to the Imp object indicates the type of impression being offered.
 type Impression struct {
 	ID                string         `json:"id"` // A unique identifier for this impression
+	Metic             []Metric       `json:"metric,omitempty"`            // RTB 2.5 Metrics object
 	Banner            *Banner        `json:"banner,omitempty"`
 	Video             *Video         `json:"video,omitempty"`
 	Audio             *Audio         `json:"audio,omitempty"`

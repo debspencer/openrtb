@@ -28,7 +28,7 @@ var _ = Describe("Pmp", func() {
 	It("should generate correctly", func() {
 		bin, err := json.Marshal(&Pmp{Deals: []Deal{{}}})
 		Expect(err).NotTo(HaveOccurred())
-		Expect(string(bin)).To(Equal(`{"deals":[{"at":2}]}`))
+		Expect(string(bin)).To(Equal(`{"private_auction":0,"deals":[{"at":2}]}`))
 	})
 
 })
