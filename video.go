@@ -38,10 +38,11 @@ type Video struct {
 	PlaybackMethod []int     `json:"playbackmethod,omitempty"` // List of allowed playback methods
 	Delivery       []int     `json:"delivery,omitempty"`       // List of supported delivery methods
 	Pos            int       `json:"pos,omitempty"`            // Ad Position
-	CompanionAd    []Banner  `json:"companionad,omitempty"`
-	Api            []int     `json:"api,omitempty"` // List of supported API frameworks
-	CompanionType  []int     `json:"companiontype,omitempty"`
-	Placement      int       `json:"placement,omitempty"` // Video placement type
+	CompanionAd    []Banner  `json:"companionad,omitempty"`    // List of companion ads
+	Api            []int     `json:"api,omitempty"`            // List of supported API frameworks
+	CompanionType  []int     `json:"companiontype,omitempty"`  // List of companion ad types
+	Placement      int       `json:"placement,omitempty"`      // Video placement type
+	PlaybackEnd    int       `json:"playbackend,omitempty"`    // The event that causes playback to end
 	Ext            Extension `json:"ext,omitempty"`
 }
 
